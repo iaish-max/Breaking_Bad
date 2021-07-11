@@ -2,6 +2,7 @@ import React from 'react'
 import '../App.css'
 
 function Card(props) {
+    console.log(props.item);
     return (
         <div className='card'>
         <div className="flip-card">
@@ -10,10 +11,14 @@ function Card(props) {
                     <img className='card-img' src={props.item.img} alt="character"/>
                 </div>
                 <div className="flip-card-back">
-                    <h3>Actor Name: {props.item.name}</h3> 
+                    <h3>Name: {props.item.name}</h3> 
                     <h3>Nickname: {props.item.nickname}</h3>
                     <h3>Birthday: {props.item.birthday}</h3> 
-                    <h3>Status: {props.item.status}</h3>  
+                    <h3>Status: {props.item.status}</h3> 
+                    <h3>Appearance: {
+                        props.item.appearance.map((i,index) => <p key={index} style={{display:'inline'}}>{i} </p>)
+                    } </h3>
+                    <h3>Portrayed: {props.item.portrayed}</h3> 
                 </div>
             </div>
         </div>

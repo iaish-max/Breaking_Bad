@@ -15,6 +15,13 @@ body {
      justify-content: center;
   }
 
+  iframe{
+    width: 70%;
+    height: 30rem;
+    margin: 5rem 15% 2rem 15%;
+  }
+
+
   .search{
     margin-top: 3.5rem;
     margin-bottom: 1rem;
@@ -80,7 +87,7 @@ body {
   }
   
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: #1EAE98;
     color: white;
     transform: rotateY(180deg);
   }
@@ -102,6 +109,12 @@ body {
     .card{
         margin: 4.5rem;
     }
+    
+    iframe{
+      width: 80%;
+      height: 30rem;
+      margin: 5rem 10% 2rem 10%;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 400px){
@@ -116,11 +129,23 @@ body {
     .card{
         margin: 3.5rem;
     }
+     
+    iframe{
+      width: 90%;
+      height: 30rem;
+      margin: 5rem 5% 2rem 5%;
+    }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 750px){
     html{
         font-size: 8px;
+    }
+
+    iframe{
+      width: 90%;
+      height: 30rem;
+      margin: 5rem 5% 2rem 5%;
     }
 }
 
