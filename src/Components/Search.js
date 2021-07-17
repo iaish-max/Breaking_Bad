@@ -8,12 +8,17 @@ function Search(props) {
         setSearch(e)
     }
     return (
+        <div>
+            <div className='sHead'>
+            <h1 className='searchHeading'>Meet The Cast</h1>
+        </div>
         <div className='search'>
             <div className='search-div'>
             <form>
-                <input type='text' placeholder='Character Name...' value={search} onChange={(e) => onChange(e.target.value)} autoFocus></input>
+                <input className='inputArea' type='text' placeholder='Character Name...' value={search} onChange={(e) => onChange(e.target.value)} autoFocus></input>
             </form>
             </div>
+        </div>
         </div>
     )
 }

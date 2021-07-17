@@ -22,7 +22,7 @@ function Characters(props) {
     },[props.query])
 
     return (
-        <div>
+        <>
         {(isLoading === true) ? 
             <img src={spinner} alt='spinner' style={{display:'block', margin:'auto', width:'5rem', padding:'5rem'}} />
             : 
@@ -31,7 +31,7 @@ function Characters(props) {
             </div>
         }
             
-        </div>
+        </>
     )
 }
 
