@@ -5,14 +5,12 @@ import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 import Search from './Components/Search';
 import Testing from './Components/Testing';
-import Video from './Components/Video';
 import About from './Components/About';
 
 function App() {
   const [query, setQuery] = useState('')
   return (
     <div>
-     {/* <Testing /> */}
      <Header />
      <Navbar />
      <About />
