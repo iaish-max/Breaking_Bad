@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from './Card'
-import spinner from '../img/spinner.gif'
+import spinner from '../img/spinner2.gif'
 
 
 
@@ -24,7 +24,9 @@ function Characters(props) {
     return (
         <>
         {(isLoading === true) ? 
-            <img src={spinner} alt='spinner' style={{display:'block', margin:'auto', width:'5rem', padding:'5rem'}} />
+            <div className='spinner-div'>
+                    <img src={spinner} alt='spinner' />
+            </div>
             : 
             <div className='Box'>
              {items.map((item) => <Card key={item.char_id} item={item}/>)}
