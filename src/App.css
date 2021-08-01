@@ -109,6 +109,8 @@ li a {
   position: relative;
   z-index: 1;
   transition: color 400ms ease-in-out;
+
+  cursor: pointer;
 }
 
 .Navbar-button::before{
@@ -359,6 +361,8 @@ scrollbar-width: none;  /* Firefox */
     margin: 10rem 2.7rem 10rem 2.7rem;
     position: relative;
     scroll-snap-type: block;
+
+    cursor: pointer;
 }
 
 .flip-card {

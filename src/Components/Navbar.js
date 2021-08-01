@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Navbar(props) {
-    console.log(props.currpage);
     return (
         <div className='navbar'>
             <ul>
