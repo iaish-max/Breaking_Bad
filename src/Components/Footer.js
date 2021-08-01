@@ -1,5 +1,4 @@
 import React from 'react'
-import { IconContext } from 'react-icons'
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 
