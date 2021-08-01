@@ -7,7 +7,7 @@ function About() {
         <div className="flex-container">
      
             <div className="flex-item flex-item1">
-                <img src={img2} alt="bg" />
+            <a className='about-aTag' href='https://en.wikipedia.org/wiki/Breaking_Bad'><img src={img2} alt="bg" /></a>
             </div>
 
             <div className="flex-item flex-item2">
