@@ -141,13 +141,15 @@ li a {
 .active {
   background-color: black;
   color: white;
-  border-bottom: 0.1rem solid yellow;
   animation: example 0.5s linear 0s infinite alternate none;
 }
 
 @keyframes example {
     from {font-size: 1.3rem;}
     to {font-size: 1.4rem;}
+
+    from {border-bottom: 0.1rem solid black;}
+    to {border-bottom: .1rem solid yellow;}
 }
 
 
