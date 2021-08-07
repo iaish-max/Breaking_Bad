@@ -71,6 +71,7 @@ a{
 .navbar{
   display: block;
   margin-bottom: 3rem;
+  height: 1.5rem;
 }
 
 ul {
@@ -91,6 +92,10 @@ li {
 
 li a {
   display: block;
+}
+
+.navbar-btn-div{
+  width: 10rem;
 }
 
 
@@ -432,6 +437,7 @@ scrollbar-width: none;  /* Firefox */
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+  height: 3.3rem;
 }
 
 .fb-icon, .ins-icon, .git-icon, .twi-icon{
@@ -521,6 +527,39 @@ scrollbar-width: none;  /* Firefox */
       font-size: 12px;
   }
 }
+
+@media only screen and (min-width: 1501px) and (max-width: 2500px){
+  html{
+      font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 2501px) and (max-width: 2700px){
+  html{
+      font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 2701px) and (max-width: 2900px){
+  html{
+      font-size: 20px;
+  }
+
+  .header-img-text{
+    top:20vw;
+  }
+}
+
+@media only screen and (min-width: 2901px) {
+  html{
+      font-size: 21px;
+  }
+
+  .header-img-text{
+    top:17vw;
+  }
+}
+
 
 
 
