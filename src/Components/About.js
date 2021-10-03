@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import img2 from '../img/img2.jpg';
 
 function About() {
+    const [nullState,]=useState(false);
+
+    const nullVal=()=> 'qwertyui';
     return (
         <div className="About">
         <div className="flex-container">
@@ -26,6 +29,7 @@ function About() {
                 </p>
             </div>
             </div>
+            {nullState && nullVal}
  
         </div>
          </div>

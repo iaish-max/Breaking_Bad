@@ -8,6 +8,9 @@ import spinner from '../img/spinner2.gif'
 function Characters(props) {
     const [items, setItems] = useState([])
     const [isLoading, setisLoading] = useState(true)
+    const [nullState,]=useState(false);
+
+    const nullVal=()=> 'qwertyui';
 
     useEffect(() => {
         console.log(props.query);
@@ -30,6 +33,7 @@ function Characters(props) {
             : 
             <div className='Box'>
              {items.map((item) => <Card key={item.char_id} item={item}/>)}
+             {nullState && nullVal}
             </div>
         }
             
